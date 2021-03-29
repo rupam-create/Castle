@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Slugify Plugin Example </title>
+    
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+
+  <style>
+fieldset.slugify {
+	color: #515151;
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+
+.slugify legend {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 10px;
+}
+
+.slugify input {
+	display: block;
+	padding: 8px;
+	margin: 8px;
+}
+
+.slug-ouput {
+	color: #05ab13;
+	font-size: 20px;
+	font-weight: 500;
+}
+  </style>  
+  
+  </head>
+  <body>
+ <header class="intro">
+ <h1> jQuery Slugify Plugin Example </h1>
+ <p> Just another url slug creation plugin for jQuery.</p>
+ <p> Written in HTML and JavaScript (jQuery)... </p>
+ <div class="action">
+ <a href="https://www.codehim.com/text-input/convert-title-to-slug-jquery-slugify/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+ <a href="https://github.com/madflow/jquery-slugify" title="View, Fork or Star on GitHub" class="btn github">View on GitHub</a>
+ </div>
+ 
+ </header>
+  
+ <main>
+  <article>
+  <p>The following is the example of jQuery Slugify. </p>
+
+<form>
+<fieldset class="slugify"> 
+<legend> Slugify JS</legend>
+<label for="slug-source">Input Title: </label>
+<input type ="text" value="" id="slug-source"/>
+
+<label for="slug-target">URL Slug: </label>
+<input type ="text" value="" id="slug-target"/>
+<p>
+<span class="slug-ouput">Generated URL Slug</span>: <span id="slug-target-span"></span> 
+</p>
+</fieldset>
+</form>
+
+  
+  </article>
+ </main>
+ 
+  <footer class="credit">Author: madflow - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+  
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Slugify JS -->
+<script src="js/slugify.js"></script>
+<script>
+$(document).ready(function(){
+  $('#slug-target,#slug-target-span').slugify('#slug-source');
+});
+</script>
+  </body>
+</html>
